@@ -12,7 +12,19 @@ forked from [kitten/setup-strong-strongswan](https://github.com/kitten/setup-str
 > 3. 添加 save-keys 插件
 > 4. 添加 strongswan 日志，路径为 /var/log/strongswan
 
-支持 IPSec 交互密钥 IKEv1、IKEv2、ESP 的导出，以便使用 Wireshark 进行解析
+支持 IPSec 交互密钥 IKEv1、IKEv2、ESP 的导出，导出路径为 /etc/strongswan/wireshark-keys
+
+如要使用 Wireshark 进行解析，请添加以下内容：
+
+```shell
+vim /etc/ipsec.conf
+···
+conn %default
+  ···
+  esp=3des-sha1! # 强制使用 3des, '!' 必须有，表示强制
+  ···
+  
+```
 
 ## 支持
 
