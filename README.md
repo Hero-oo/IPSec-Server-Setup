@@ -1,7 +1,6 @@
 # 设置基于 Strongswan IPSec (& L2TP) 的 VPN 服务器
 
 forked from [kitten/setup-strong-strongswan](https://github.com/kitten/setup-strong-strongswan)
-
 原项目 [UNMAINTAINED]  已停止维护
 
 部署一个使用 L2TP/IPSec 预共享密钥方式的 IPSec VPN（基于 StrongSwan 和 xl2tpd 实现） 
