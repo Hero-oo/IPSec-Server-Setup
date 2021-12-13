@@ -235,7 +235,7 @@ bigEcho "Installing necessary dependencies"
 call pacapt -Sy --noconfirm
 checkForError
 
-call pacapt -S --noconfirm -- make g++ gcc xl2tpd libssl-dev curl libgmp-dev iptables
+call pacapt -S --noconfirm -- make g++ gcc xl2tpd libssl-dev curl libgmp-dev iptables openssl-devel
 checkForError
 
 #################################################################
