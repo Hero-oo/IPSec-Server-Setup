@@ -50,7 +50,7 @@ conn %default
 本脚本部署时不需要域名和公共 IP
 
 ```
-curl -L -O https://raw.githubusercontent.com/Salted-Fiish/setup-strong-strongswan/master/setup.sh
+curl -L -O https://raw.githubusercontent.com/Hero-oo/IPSec-Server-Setup/master/setup.sh
 chmod +x setup.sh
 sudo ./setup.sh
 ```
